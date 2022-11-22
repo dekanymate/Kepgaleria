@@ -1,0 +1,6 @@
+.kep {
+    border: solid bisque 1px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
