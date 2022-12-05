@@ -1,10 +1,10 @@
-import Kep from './Kep';
+import Galeria from './Galeria';
 import './App.css';
 
 const konyveim=[
   {
     id:1,
-    kepcim: "Nature Landscape Free Stock Image",
+    kepcim: "Macska egér játék",
     kepLeiras: "Tájkép, hegyek",
     kepEleres: "https://cdn.stocksnap.io/img-thumbs/960w/nature-landscape_Y65WP68WKD.jpg"
 },
@@ -31,12 +31,7 @@ function App() {
         <h2>Képek</h2>
       </header>
       <article className="kepek">
-        {
-          konyveim.map((kep,index)=>{
-            return (<Kep kepAdat={kep} key={index}/>)
-          }
-          )
-        }
+          <Galeria konyveim={konyveim}/> 
       </article>
       <footer className="lablec">
         Dékány Máté
